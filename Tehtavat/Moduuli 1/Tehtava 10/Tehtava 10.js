@@ -23,4 +23,4 @@ do {
 const todennäköisyysprosentti = osumat / 10000 * 100;
 
 document.querySelector('#target').innerHTML = 'Probability to get sum ' +
-    ''+haluttusumma+' with '+nopat+' dice is '+ todennäköisyysprosentti+'%';
+    ''+haluttusumma+' with '+nopat+' dice is approximately '+ todennäköisyysprosentti+'%';
