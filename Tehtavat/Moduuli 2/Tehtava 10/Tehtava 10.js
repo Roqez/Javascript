@@ -10,7 +10,7 @@ for (let i=1; i <= kandidaattienmaara; i++) {
   }
   )
 }
-console.log(kandidaatit)
+
 voters = parseInt(prompt('Anna äänestäjien lukumäärä'))
 for (let i=1; i <= voters; i++) {
   vote = prompt('Anna äänestettävän kandidaatin nimi')
@@ -20,9 +20,9 @@ for (let i=1; i <= voters; i++) {
     }
   }
 }
-kandidaatit.sort((a, b) => {
-  console.log('Sortin sisällä '+kandidaatit.name)
-   console.log(a, b);
-   return b - a;
-});
+kandidaatit.sort((a, b) => b.votes - a.votes);
+console.log(kandidaatit)
+
+
+
 
